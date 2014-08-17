@@ -1,0 +1,93 @@
+@media screen and (max-width: 640px) {
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-size: 100%;
+    }
+    
+    .header {
+        width: 100%;
+        color: white;
+    }
+    
+    .header .left-column {
+        float: left;
+        width: 29.0625%;
+        background: #464646;
+        -webkit-box-shadow: 0px 6px 12px -3px rgba(50, 50, 50, 0.66);
+        -moz-box-shadow:    0px 6px 12px -3px rgba(50, 50, 50, 0.66);
+        box-shadow:         0px 6px 12px -3px rgba(50, 50, 50, 0.66);
+    }
+    
+    .header .left-column .logo {
+        float: left;
+        width: 27.95698924731183%;
+        margin-left: 6.45161290322581%;
+        margin-top: 5.91397849462366%;
+        margin-bottom: 6.45161290322581%;
+    }
+    
+    .header .left-column .logo img {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+    .header .left-column .page-name {
+        margin-top: 13.97849462365591%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1875em;
+    }
+    
+    .header .left-column .copyright {
+        display: none;
+    }
+    
+    .top-menu {
+        float: right;
+        width: 70.9375%;
+        padding: 0;
+        margin: 0;
+        background: url(img/mob/header/bg.png);
+        -webkit-box-shadow: 0px 6px 12px -3px rgba(50, 50, 50, 0.66);
+        -moz-box-shadow:    0px 6px 12px -3px rgba(50, 50, 50, 0.66);
+        box-shadow:         0px 6px 12px -3px rgba(50, 50, 50, 0.66);
+    }
+    
+    .top-menu li {
+        display: inline-block;
+        list-style: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1875em;
+    }
+    
+    .top-menu li a {
+        display: inline-block;
+        padding: 23px 0; 
+        color: #9b7d08;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    .top-menu .about {
+        width: 24.88986784140969%;
+        padding-left: 12.77533039647577%;
+        border-right: 1px solid #dcb105;
+    }
+    
+    .top-menu .services {
+        width: 20.70484581497797%;
+        padding-left: 8.37004405286344%;
+        border-right: 1px solid #dcb105;
+    }
+    
+    .top-menu .contact {
+        width: 21.36563876651982%;
+        padding-left: 11.45374449339207%;
+    }
+    
+    
+}
+

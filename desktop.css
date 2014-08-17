@@ -1,0 +1,104 @@
+@media screen and (min-width: 1024px) {
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-size: 100%;
+    }
+    
+    .layout-center-wrapper {
+        width: 78.46153%;
+        margin: 0 auto;
+    }
+    
+    .clearfix {
+        clear: both;
+    }
+    
+    .header {
+        width: 100%;
+        padding-top: 28px;
+        background: url(img/comp/header/bg-2.jpg) no-repeat;
+        color: white;
+    }
+    
+    .header .left-column {
+        float: left;
+        width: 49.01960784313725%;
+    }
+    
+    .header .left-column .logo {
+        float: left;
+        width: 18.4%;
+    }
+    
+    .header .left-column .logo img {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+    .header .left-column .page-name {
+        display: inline-block;
+        margin-top: 6.4%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.411764705882353em;
+        font-style: italic;
+    }
+    
+    .header .left-column .copyright {
+        display: inline-block;
+        font-family: 'Lao UI', sans-serif;
+        font-size: 0.8125em;
+        text-transform: uppercase;
+    }
+    
+    .top-menu {
+        float: right;
+        width: 44.41176470588235%;
+        margin: 0;
+        margin-top: 43px;
+        padding: 0;
+        background: #f5c506;
+        border-bottom: 1px solid #f5c506;
+        text-transform: uppercase;
+        -webkit-box-shadow: -4px -5px rgba(245, 197, 6, 0.5),
+                            -8px -8px rgba(245, 197, 6, 0.25);
+        -moz-box-shadow: -4px -5px rgba(245, 197, 6, 0.5),
+                         -8px -8px rgba(245, 197, 6, 0.25);
+        box-shadow: -4px -5px rgba(245, 197, 6, 0.5),
+                    -8px -8px rgba(245, 197, 6, 0.25);
+    }
+    
+    .top-menu li {
+        display: inline-block;
+        list-style: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.9411764705882353em;
+    }
+    
+    .top-menu li a {
+        display: inline-block;
+        padding: 12px 0; 
+        color: #9b7d08;
+        text-decoration: none;
+    }
+    
+    .top-menu .about {
+        width: 22.73730684326711%;
+        padding-left: 15.2317880794702%;
+        border-right: 1px solid #dcb105;
+    }
+    
+    .top-menu .services {
+        width: 19.86754966887417%;
+        padding-left: 9.27152317880795%;
+        border-right: 1px solid #dcb105;
+    }
+    
+    .top-menu .contact {
+        width: 21.63355408388521%;
+        padding-left: 10.8167770419426%;
+    }
+}
