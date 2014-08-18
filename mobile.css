@@ -5,17 +5,24 @@
     }
     
     body {
-        font-size: 100%;
+        font-size: 19px;
+        font-family: 'Arial', 'Verdana', 'Tahoma', sans-serif;
+    }
+    
+    .layout-center-wrapper {
+        width: 100%;
+        margin: 0 0;
     }
     
     .header {
         width: 100%;
+        padding-top: 0;
         color: white;
     }
     
     .header .left-column {
         float: left;
-        width: 29.0625%;
+        width: 29.06%;
         background: #464646;
         -webkit-box-shadow: 0px 6px 12px -3px rgba(50, 50, 50, 0.66);
         -moz-box-shadow:    0px 6px 12px -3px rgba(50, 50, 50, 0.66);
@@ -24,21 +31,26 @@
     
     .header .left-column .logo {
         float: left;
-        width: 27.95698924731183%;
-        margin-left: 6.45161290322581%;
-        margin-top: 5.91397849462366%;
-        margin-bottom: 6.45161290322581%;
+        width: 27.95%;
+        margin-left: 6.45%;
+        margin-top: 5.91%;
+        margin-bottom: 6.45%;
+        background: url(img/mob/header/logo.png);
     }
     
-    .header .left-column .logo img {
-        max-width: 100%;
-        min-width: 100%;
+    .header .left-column .logo .logo-for-desk {
+        display: none;
+    }
+    
+    .header .left-column .logo .logo-for-mobile {
+        display: block;
     }
     
     .header .left-column .page-name {
-        margin-top: 13.97849462365591%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.1875em;
+        margin-top: 13.97%;
+        font-family: 'Lucida Sans Unicode', sans-serif;
+        font-size: 19px;
+        font-style: italic;
     }
     
     .header .left-column .copyright {
@@ -47,7 +59,7 @@
     
     .top-menu {
         float: right;
-        width: 70.9375%;
+        width: 70.93%;
         padding: 0;
         margin: 0;
         background: url(img/mob/header/bg.png);
@@ -60,7 +72,7 @@
         display: inline-block;
         list-style: none;
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.1875em;
+        font-size: 19px;
     }
     
     .top-menu li a {
@@ -72,20 +84,20 @@
     }
     
     .top-menu .about {
-        width: 24.88986784140969%;
-        padding-left: 12.77533039647577%;
+        width: 24.88%;
+        padding-left: 12.77%;
         border-right: 1px solid #dcb105;
     }
     
     .top-menu .services {
-        width: 20.70484581497797%;
-        padding-left: 8.37004405286344%;
+        width: 20.70%;
+        padding-left: 8.37%;
         border-right: 1px solid #dcb105;
     }
     
     .top-menu .contact {
-        width: 21.36563876651982%;
-        padding-left: 11.45374449339207%;
+        width: 21.36%;
+        padding-left: 11.45%;
     }
     
     
