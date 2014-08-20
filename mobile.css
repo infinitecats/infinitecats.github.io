@@ -16,17 +16,23 @@
     
     .header {
         width: 100%;
+        height: 389px;
         padding-top: 0;
+        background: none;
         color: white;
+    }
+    
+    .top-header {
+        -webkit-box-shadow: 0px 1px 7px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    0px 1px 7px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:         0px 1px 7px 0px rgba(50, 50, 50, 0.75);
     }
     
     .header .left-column {
         float: left;
-        width: 29.06%;
+        width: 29.07%;
+        height: 63px;
         background: #464646;
-        -webkit-box-shadow: 0px 6px 12px -3px rgba(50, 50, 50, 0.66);
-        -moz-box-shadow:    0px 6px 12px -3px rgba(50, 50, 50, 0.66);
-        box-shadow:         0px 6px 12px -3px rgba(50, 50, 50, 0.66);
     }
     
     .header .left-column .logo {
@@ -35,7 +41,7 @@
         margin-left: 6.45%;
         margin-top: 5.91%;
         margin-bottom: 6.45%;
-        background: url(img/mob/header/logo.png);
+        background: url(img/mob/header/logo.png) no-repeat;
     }
     
     .header .left-column .logo .logo-for-desk {
@@ -62,10 +68,9 @@
         width: 70.93%;
         padding: 0;
         margin: 0;
+        border-bottom: none;
         background: url(img/mob/header/bg.png);
-        -webkit-box-shadow: 0px 6px 12px -3px rgba(50, 50, 50, 0.66);
-        -moz-box-shadow:    0px 6px 12px -3px rgba(50, 50, 50, 0.66);
-        box-shadow:         0px 6px 12px -3px rgba(50, 50, 50, 0.66);
+        box-shadow: none;
     }
     
     .top-menu li {
@@ -76,30 +81,112 @@
     }
     
     .top-menu li a {
-        display: inline-block;
-        padding: 23px 0; 
+        display: block;
+        padding: 21px 0; 
         color: #9b7d08;
         text-decoration: none;
         text-transform: uppercase;
     }
     
     .top-menu .about {
-        width: 24.88%;
-        padding-left: 12.77%;
+        width: 37.66%;
         border-right: 1px solid #dcb105;
     }
     
     .top-menu .services {
-        width: 20.70%;
-        padding-left: 8.37%;
+        width: 29.07%;
         border-right: 1px solid #dcb105;
     }
     
     .top-menu .contact {
-        width: 21.36%;
-        padding-left: 11.45%;
+        width: 32.81%;
     }
     
+    .top-menu .about a {
+        padding-left: 33.91%;
+    }
     
+    .top-menu .services a {
+        padding-left: 28.78%;
+    }
+    
+    .top-menu .contact a {
+        padding-left: 34.89%;
+    }
+    
+    .top-menu .icon {
+        background: url(img/mob/header/top-menu-sprite.png) no-repeat;
+    }
+
+    .top-menu .about .icon {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 32.25%;
+        left: 13.45%;
+        background-position: 0 0;
+    } 
+
+    .top-menu .services .icon {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        top: 33.87%;
+        left: 6.06%;
+        background-position: -37px 0;
+    }
+    
+    .top-menu .contact .icon {
+        position: absolute;
+        width: 28px;
+        height: 22px;
+        top: 32.25%;
+        left: 8.05%;
+        background-position: -70px 0;
+    }
+    
+    .header .slider {
+        display: block;
+        margin-top: 0;
+    }
+
+    .header .slider-controls {
+            display: none;
+    }
+
+    .header .slider .slide-video {
+        float: left;
+        width: 100%;
+        height: 318px;
+        background: rgba(239, 220, 143, 0.4) url(img/comp/header/player.jpg) no-repeat;
+        -moz-background-size: 100%; 
+        -webkit-background-size: 100%; 
+        -o-background-size: 100%; 
+        background-size: 100%; 
+    }
+
+    .header .slider .slide-video .circle {
+        display: block;
+        width: 67px;
+        height: 67px;
+        border-top:1px solid transparent;
+        border-radius: 50%;
+        background: rgba(225, 207, 64, 0.85);
+    }
+
+    .header .slider .slide-video .play-btn {
+        display: block;
+        width: 0;
+        height: 0;
+        border: 19px solid rgba(0, 0, 0, 0);
+        border-left: 19px solid white;
+        margin-left: 28px;
+        margin-top: 14px;
+        cursor: pointer;
+    }
+
+    .header .slider .slide-text {
+        display: none;
+    }
 }
 

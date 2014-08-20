@@ -18,12 +18,19 @@ body {
 }
 
 .header {
-    width: 1300px;
+    width: 100%;
     height: 566px;
     margin: 0 auto;
     padding-top: 28px;
     background: url(img/comp/header/bg-2.jpg) no-repeat;
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
     color: white;
+    -webkit-box-shadow: inset 0px -5px 11px -6px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    inset 0px -5px 11px -6px rgba(50, 50, 50, 0.75);
+    box-shadow:         inset 0px -5px 11px -6px rgba(50, 50, 50, 0.75);
 }
 
 .header .left-column {
@@ -86,7 +93,7 @@ body {
 .top-menu li a {
     display: block;
     position: relative;
-    padding: 12px 0; 
+    padding: 11px 0; 
     z-index: 1;
     color: #9b7d08;
     text-decoration: none;
@@ -118,33 +125,33 @@ body {
     padding-left: 33.33%;
 }
 
-.top-menu-icon {
+.top-menu .icon {
     background: url(img/comp/header/top-menu-sprite.png) no-repeat;
 }
 
-.top-menu .about .icon-about {
+.top-menu .about .icon {
     position: absolute;
     width: 21px;
     height: 19px;
-    top: 11px;
+    top: 26.82%;
     left: 22.67%;
     background-position: 0 0;
 } 
 
-.top-menu .services .icon-services {
+.top-menu .services .icon {
     position: absolute;
     width: 19px;
     height: 20px;
-    top: 11px;
+    top: 26.82%;
     left: 10.60%;
     background-position: -31px 0;
 }
 
-.top-menu .contact .icon-contact {
+.top-menu .contact .icon {
     position: absolute;
     width: 24px;
     height: 18px;
-    top: 11px;
+    top: 26.82%;
     left: 11.56%;
     background-position: -58px 0;
 }
@@ -169,27 +176,19 @@ body {
     height: 57px;
     background: #f5c506;
     cursor: pointer;
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: transform;
-    -o-transition-property: transform;
-    -moz-transition-property: transform;
-    transition-property: transform;
 }
 
 .header .slider-controls .ahead {
-    left: 1128px;
+    right: -13.7%;
     top: 132px;
 }
 
 .header .slider-controls .back {
-    left: -140px;
+    left: -13.7%;
     top: 132px;
 }
 
-.header .slider-controls-img {
+.header .slider-img {
     display: block;
     position: absolute;
     top: 19px;
@@ -199,21 +198,40 @@ body {
     background: url(img/comp/header/slider-controls.png) no-repeat;
 }
 
-.header .slider-controls .ahead .img-ahead {
+.slider-controls .ahead .slider-img {
     left: 11px;
     background-position: -15px 0 ;
 }
 
-.header .slider-controls .back .img-back {
+.slider-controls .back .slider-img {
     background-position: 0 0;
+}
+
+@-webkit-keyframes pulse-shrink {
+to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+@keyframes pulse-shrink {
+to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 }
 
 .header .slider-controls .ahead:hover,
 .header .slider-controls .back:hover {
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-animation-name: pulse-shrink;
+    animation-name: pulse-shrink;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
     background: #ffce0b;
 }
 
@@ -225,10 +243,34 @@ body {
     float: left;
     width: 53.72%;
     height: 327px;
-    background: rgba(239, 220, 143, 0.4) url(img/comp/header/player.jpg);
+    background: rgba(239, 220, 143, 0.4) url(img/comp/header/player.jpg) no-repeat;
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
     -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.header .slider .slide-video .circle {
+    display: block;
+    width: 67px;
+    height: 67px;
+    border-top:1px solid transparent;
+    border-radius: 50%;
+    background: rgba(225, 207, 64, 0.85);
+}
+
+.header .slider .slide-video .play-btn {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 19px solid rgba(0, 0, 0, 0);
+    border-left: 19px solid white;
+    margin-left: 28px;
+    margin-top: 14px;
+    cursor: pointer;
 }
 
 .header .slider .slide-text {
@@ -238,12 +280,12 @@ body {
     text-align: center;
 }
 
-.header .slider .slide-text h2 {
+.header .slider .slide-text h1 {
     display: block;
     margin: 0;
 }
 
-.header .slider .slide-text h2:first-child {
+.header .slider .slide-text .the-cool {
     margin-top: 91px;
     font-family: 'Asap', sans-serif;
     font-size: 63px;
@@ -253,11 +295,91 @@ body {
     text-shadow: rgba(245, 197, 6, 0.5) -1px -1px;
 }
 
-.header .slider .slide-text h2:nth-child(2) {
+.header .slider .slide-text .the-minimal {
     font-family: 'Asap', sans-serif;
     font-size: 63px;
     font-weight: normal;
     text-transform: uppercase;
     text-shadow: rgba(255, 255, 255, 0.5) -1px -1px;
+}
+
+.content {
+    display: block;
+}
+
+.content .benefits {
+    display: block;
+    width: 100%;
+    height: 212px;
+    background: url(img/comp/content/bg-for-benefits.png);
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 2px 4px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 2px 4px 0px rgba(50, 50, 50, 0.75);
+}
+
+.content .benefits .design,
+.content .benefits .customise,
+.content .benefits .free {
+    float: left;
+    height: 212px;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+}
+
+.content .benefits .design {
+    width: 33.3%;
+}
+
+.content .benefits .customise {
+    width: 33.1%;
+    border: none;
+}
+
+.content .benefits .free {
+    width: 33.2%;
+}
+
+.content .benefits .img {
+    background: url(img/comp/content/icons-sprite.png) no-repeat;
+}
+
+.content .benefits .design .img {
+    display: block;
+    width: 109px;
+    height: 74px;
+    margin-left: 33.23%;
+    margin-top: 61px;
+    margin-bottom: 19px;
+    background-position: 0 -20px;
+}
+
+.content .benefits .customise .img {
+    display: block;
+    width: 91px;
+    height: 95px;
+    margin-left: 39.94%;
+    margin-top: 37px;
+    margin-bottom: 22px;
+    background-position: -133px 0;
+}
+
+.content .benefits .free .img {
+    display: block;
+    width: 81px;
+    height: 83px;
+    margin-left: 35.1%;
+    margin-top: 54px;
+    margin-bottom: 17px;
+    background-position: -248px -12px;
+}
+
+.content .benefits .text {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -1px 0px 0px rgba(150, 150, 150, 1);
 }
 
