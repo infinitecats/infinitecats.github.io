@@ -22,16 +22,10 @@
         color: white;
     }
     
-    .top-header {
-        -webkit-box-shadow: 0px 1px 7px 0px rgba(50, 50, 50, 0.75);
-        -moz-box-shadow:    0px 1px 7px 0px rgba(50, 50, 50, 0.75);
-        box-shadow:         0px 1px 7px 0px rgba(50, 50, 50, 0.75);
-    }
-    
     .header .left-column {
         float: left;
         width: 29.07%;
-        height: 63px;
+        height: 62px;
         background: #464646;
     }
     
@@ -39,8 +33,7 @@
         float: left;
         width: 27.95%;
         margin-left: 6.45%;
-        margin-top: 5.91%;
-        margin-bottom: 6.45%;
+        margin-top: 11px;
         background: url(img/mob/header/logo.png) no-repeat;
     }
     
@@ -53,7 +46,7 @@
     }
     
     .header .left-column .page-name {
-        margin-top: 13.97%;
+        margin-top: 20px;
         font-family: 'Lucida Sans Unicode', sans-serif;
         font-size: 19px;
         font-style: italic;
@@ -83,9 +76,9 @@
     .top-menu li a {
         display: block;
         padding: 21px 0; 
+        line-height: 20px;
         color: #9b7d08;
         text-decoration: none;
-        text-transform: uppercase;
     }
     
     .top-menu .about {
@@ -163,6 +156,9 @@
         -webkit-background-size: 100%; 
         -o-background-size: 100%; 
         background-size: 100%; 
+        -webkit-box-shadow: inset 0px 2px 8px 0px rgba(50, 50, 50, 0.89);
+        -moz-box-shadow:    inset 0px 2px 8px 0px rgba(50, 50, 50, 0.89);
+        box-shadow:         inset 0px 2px 8px 0px rgba(50, 50, 50, 0.89);
     }
 
     .header .slider .slide-video .circle {
