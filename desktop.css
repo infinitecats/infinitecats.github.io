@@ -186,6 +186,10 @@ body {
     cursor: pointer;
 }
 
+.header .slider-controls .limit {
+    background: #cca80e;
+}
+
 .header .slider-controls .ahead {
     right: -13.7%;
     top: 132px;
@@ -243,6 +247,13 @@ to {
     background: #ffce0b;
 }
 
+.header .slider-controls .ahead.limit:hover,
+.header .slider-controls .back.limit:hover {
+    -webkit-animation: none;
+    animation: none;
+    background: #cca80e;
+}
+
 .header .slider .slide {
     display: block;
 }
@@ -268,12 +279,12 @@ to {
 }
 
 .header .slider .slide-video .play-btn-first {
-    display: inline-block;
-    position: relative;
+    display: block;
+    position: absolute;
     width: 64px;
     height: 64px;
-    margin-left: 43.89%;
-    margin-top: 130px;
+    left: 43.89%;
+    top: 130px;
     border-radius: 50%;
     background-color: rgba(245, 197, 6, 0.72);
     cursor: pointer;
@@ -281,10 +292,10 @@ to {
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
     transition-duration: 0.2s;
-    -webkit-transition-property: transform;
-    -moz-transition-property: transform;
-    -o-transition-property: transform;
-    transition-property: transform;
+    -webkit-transition-property: transform, background;
+    -moz-transition-property: transform, background;
+    -o-transition-property: transform, background;
+    transition-property: transform, background;
 }
 
 .header .slider .slide-video .play-btn-first .img-services {
@@ -305,7 +316,54 @@ to {
 }
 
 .header .slider .slide-video .play-btn-second {
+    display: block;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 278px;
+    left: 5.28%;
+    background: rgba(245, 197, 6, 0.37);
+    cursor: pointer;
+}
+
+.header .slider .slide-video .play-btn-second .img-services {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 17px;
+    top: 5px;
+    left: 10px;
+    background-position: -18px -9px;
+}
     
+.header .slider .slide-video .time-band {
+    display: block;
+    position: absolute;
+    width: 73.58%;
+    height: 12px;
+    top: 286px;
+    left: 14.57%;
+    background: rgba(245, 197, 6, 0.28);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header .slider .slide-video .sound {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 285px;
+    right: 19px;
+    cursor: pointer;
+}
+
+.header .slider .slide-video .sound .img-services {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-position: -28px -9px;
 }
 
 .header .slider .slide-video .play-btn-first:hover {
@@ -313,15 +371,18 @@ to {
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
-    background-color: rgba(245, 197, 6, 0.5);
+    background-color: rgba(245, 197, 6, 0.9);
 }
-
+   
 .header .slider .slide-video .play-btn-first:hover .img-services {
     width: 19px;
     height: 34px;
     background-position: -43px 0;
 }
 
+.header .slider .slide-video .play-btn-second:hover {
+    background: rgba(245, 197, 6, 0.5);
+}
 
 .header .slider .slide-text {
     float: left;
@@ -485,10 +546,50 @@ to {
 
 .content .slide .slide-video {
     float: left;
+    position: relative;
     width: 30.88%;
     height: 232px;
     margin-right: 3.33%;
     background: url(img/comp/content/video.jpg) no-repeat;
+}
+
+.content .slide .slide-video .play-video {
+    display: block;
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    top:  93px;
+    left: 41.26%;
+    background: rgba(245, 197, 6, 0.72);
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+}
+
+.content .slide .slide-video .play-video .play {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 31px;
+    top: 15px;
+    left: 25px;
+    background: url(img/comp/content/play-video.png) no-repeat;
+    opacity: 0.9;
+}
+
+.content .slide .slide-video .play-video:hover {
+    background: rgba(245, 197, 6, 0.9);
+}
+
+.content .slide .slide-video .play-video:hover .play {
+    opacity: 1;
 }
 
 .content .slide .twitter {
