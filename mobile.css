@@ -31,7 +31,8 @@
     
     .header .left-column .logo {
         float: left;
-        width: 27.95%;
+        width: 40px;
+        height: 39px;
         margin-left: 6.45%;
         margin-top: 11px;
         background: url(img/mob/header/logo.png) no-repeat;
